@@ -1,0 +1,229 @@
+button {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  &:hover {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:active {
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:focus {
+    outline:none;
+  }
+  &.disable {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+.button {
+  position: absolute;
+  background: $warm-dark;
+  color: #fff;
+  padding: 9px 30px;
+  font-family: "Helvetica-Bold";
+  text-shadow: 0px 1px 4px rgba(7, 12, 16, 0.24), 0.416px 1.956px 3px rgba(7, 12, 16, 0.5);
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  transition: all .3s;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: $warm-light;
+  }
+  &.disable {
+    cursor: default;
+    pointer-events: none;
+  }
+  &.correct {
+
+  }
+  &.incorrect {
+
+  }
+}
+
+.button-two {
+  font-family: "Neutraface-Demi";
+  color: $white;
+  background: $warm-dark;
+  padding: 10px 60px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 15px;
+  border-width: 1px;
+  border-color: rgb(222, 91, 73);
+  border-style: solid;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: $warm-light;
+    border-color: $warm-light;
+  }
+  &.disable {
+    cursor: default;
+    pointer-events: none;
+  }
+  &.correct {
+
+  }
+  &.incorrect {
+
+  }
+}
+
+.small-btn {
+  font-family: "Neutraface-Demi";
+  color: $white;
+  background: $warm-dark;
+  padding: 5px 20px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  font-size: 0.9rem;
+  text-align: center;
+  border-width: 1px;
+  border-color: rgb(222, 91, 73);
+  border-style: solid;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: $warm-light;
+    border-color: $warm-light;
+  }
+  &.disable {
+    cursor: default;
+    pointer-events: none;
+    background-color: $gray;
+    border-color: $gray;
+  }
+}
+
+.selections {
+  position: absolute;
+  width: 100%;
+  label {
+    font-family: "Neutraface-Demi";
+    color: $white;
+    background: $warm-dark;
+    padding: 10px 60px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 15px;
+    border-width: 1px;
+    border-color: rgb(222, 91, 73);
+    border-style: solid;
+    text-transform: uppercase;
+    transition: all .3s;
+    &.checked {
+      background: $primary-cool;
+      border-color: rgb(118, 156, 191);
+      box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19),0px 8px 17px 0px rgba(0, 0, 0, 0.2);
+      // &:before {
+      //   content: "\2713";
+      //   display: block;
+      //   position: absolute;
+      //   top: calc(50% - 12px);
+      //   left: 15px;
+      //   width: 25px;
+      //   height: 25px;
+      //   background: $white;
+      //   border-radius: 50%;
+      //   color: $primary-cool;
+      //   font-size: 1rem;
+      //   padding: 4px;
+      // }
+    }
+    &.correct {
+      background: $primary-cool;
+      border-color: rgb(118, 156, 191);
+      box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.19),0px 8px 17px 0px rgba(0, 0, 0, 0.2);
+      &:before {
+        content: "\2713";
+        display: block;
+        position: absolute;
+        top: calc(50% - 12px);
+        left: 15px;
+        width: 25px;
+        height: 25px;
+        background: $white;
+        border-radius: 50%;
+        color: $primary-cool;
+        font-size: 1rem;
+        padding: 4px;
+      }
+    }
+    &:hover {
+      background: $warm-light;
+    }
+    input[type=checkbox] {
+      display: none;
+    }
+  }
+}
+.submit {
+  font-family: "Neutraface-Demi";
+  color: $white;
+  background: $warm-dark;
+  padding: 5px 20px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16),0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  font-size: 0.9rem;
+  text-align: center;
+  border-width: 1px;
+  border-color: rgb(222, 91, 73);
+  border-style: solid;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: $warm-light;
+    border-color: $warm-light;
+  }
+  &.disable {
+    cursor: default;
+    pointer-events: none;
+    background-color: $gray;
+    border-color: $gray;
+  }
+}
